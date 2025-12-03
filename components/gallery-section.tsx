@@ -87,19 +87,19 @@ export default function GallerySection() {
         <motion.div key={artwork.id} variants={item}>
           <Link href={`/gallery/${artwork.id}`} className="group block overflow-hidden rounded-lg">
             <div className="relative aspect-square overflow-hidden rounded-lg bg-muted">
-              {/* <Image
+              <Image
                 src={artwork.image || "/placeholder.svg"}
                 alt={artwork.title}
                 fill
                 className="object-cover transition-all duration-500 group-hover:scale-110 group-hover:brightness-110"
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" /> */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
             </div>
             <div className="p-4">
               <h3 className="font-medium">{artwork.title}</h3>
-              <p className="text-sm text-muted-foreground">{artwork.artist}</p>
-              <p className="mt-2 text-sm font-medium">{artwork.price}</p>
+              <p className="text-sm text-muted-foreground">{artwork.year}</p>
+              {/* <p className="mt-2 text-sm font-medium">{artwork.price}</p> */}
             </div>
           </Link>
         </motion.div>

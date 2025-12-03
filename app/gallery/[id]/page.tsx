@@ -18,7 +18,7 @@ export default function ArtworkPage() {
   return (
     <div className="container px-4 py-12 md:py-24">
       <Button variant="ghost" asChild className="mb-8">
-        <Link href="/gallery" className="flex items-center gap-2">
+        <Link href="/" className="flex items-center gap-2">
           <ArrowLeft className="h-4 w-4" />
           Back to Gallery
         </Link>
@@ -78,27 +78,9 @@ export default function ArtworkPage() {
         >
           <div>
             <h1 className="text-3xl font-bold">{artwork.title}</h1>
-            <p className="text-xl text-muted-foreground">{artwork.artist}</p>
-          </div>
-
-          <div className="flex gap-4 text-sm text-muted-foreground">
-            <div>{artwork.year}</div>
-            <div>{artwork.medium}</div>
-            <div>{artwork.dimensions}</div>
           </div>
 
           <p className="text-lg">{artwork.description}</p>
-
-          <div className="mt-4">
-            <h3 className="text-lg font-medium">Price</h3>
-            <p className="text-2xl font-bold">{artwork.price}</p>
-          </div>
-
-          <div className="mt-auto pt-8">
-            <Button size="lg" className="w-full">
-              Inquire About This Piece
-            </Button>
-          </div>
         </motion.div>
       </div>
     </div>
