@@ -92,14 +92,8 @@ export default function MomentsSection() {
   return (
     <section className=" flex items-center justify-center">
       <div className="max-w-3xl text-center">
-        {/* Main heading with Aurora text */}
-        <h2 className="md:text-6xl text-5xl md:font-semibold font-bold mb-8 leading-tight">
-          <AuroraText colors={["#ff1b9d", "#ff457f", "#ff69b4", "#ffb6d9"]}>Our Special Moments</AuroraText>
-          <div className="mt-4 text-4xl md:text-5xl">🤍</div>
-        </h2>
 
-
-        {/* Days counter with enhanced styling */}
+       {/* Days counter with enhanced styling */}
         <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 md:p-12 shadow-lg border border-pink-100 mb-8">
           <p className="text-gray-500 text-sm md:text-base mb-4 uppercase tracking-widest">Our Time Together for</p>
           <div className="grid grid-cols-5 gap-2 md:gap-6 mb-6">
@@ -146,6 +140,13 @@ export default function MomentsSection() {
                 <p className="text-sm text-gray-400">And counting till forever!</p>
             </div>
         </div>
+
+        {/* Main heading with Aurora text */}
+        <h2 className="md:text-6xl text-5xl md:font-semibold font-bold mb-8 leading-tight">
+          <AuroraText colors={["#ff1b9d", "#ff457f", "#ff69b4", "#ffb6d9"]}>Our Special Moments</AuroraText>
+          <div className="mt-4 text-4xl md:text-5xl">🤍</div>
+        </h2>
+
 
         {/* Decorative message */}
         {/* <div className="space-y-4 text-gray-700">

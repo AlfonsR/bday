@@ -5,9 +5,12 @@ import Image from "next/image"
 import Link from "next/link"
 import { ArrowLeft } from "lucide-react"
 import { motion } from "framer-motion"
+import { EmblaOptionsType } from 'embla-carousel'
 
 import { Button } from "@/components/ui/button"
 import { data } from "@/lib/data"
+import SwiperCarousel from "@/components/ui/swipercarousel"
+
 
 export default function ArtworkPage() {
   const params = useParams()
@@ -20,7 +23,7 @@ export default function ArtworkPage() {
       <Button variant="ghost" asChild className="mb-8">
         <Link href="/" className="flex items-center gap-2">
           <ArrowLeft className="h-4 w-4" />
-          Back to Gallery
+          Back to Home
         </Link>
       </Button>
 
@@ -29,9 +32,9 @@ export default function ArtworkPage() {
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          className="relative aspect-square overflow-hidden rounded-lg bg-muted"
+          className="relative overflow-hidden rounded-lg bg-muted"
         >
-          <Image
+          {/* <Image
             src={artwork.image || "/placeholder.svg"}
             alt={artwork.title}
             fill
@@ -67,8 +70,17 @@ export default function ArtworkPage() {
                 <path d="m15 3 6 6m0 0-6 6m6-6H8a5 5 0 0 0-5 5v6" />
               </svg>
             </motion.button>
-          </div>
+          </div> */}
+
+
+
+          <SwiperCarousel slides={artwork.gallery}/>
+     
+
+
         </motion.div>
+
+        
 
         <motion.div
           initial={{ opacity: 0, x: 20 }}
