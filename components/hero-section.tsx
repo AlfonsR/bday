@@ -15,7 +15,13 @@ export default function HeroSection() {
   }, [])
   return (
     <section className="min-h-screen flex items-center justify-center px-6 py-20 relative overflow-hidden">
-      <video autoPlay muted loop className="absolute inset-0 w-full h-full object-cover">
+      <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        >
         <source src="/movie/LandingPageMovie.webm" type="video/webm" />
         Your browser does not support the video tag.
       </video>
