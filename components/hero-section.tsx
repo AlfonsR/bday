@@ -53,14 +53,15 @@ export default function HeroSection() {
         className="max-w-2xl text-center relative z-10 opacity-0"
             >
 
-        <div className="text-5xl md:text-7xl font-semibold text-rose-400 leading-tight line-clamp-2 text-shadow-pink text-shadow-xl">
-      <LineShadowText className="bold" shadowColor={"pink"}>
+        <div className="text-5xl md:text-7xl font-bold text-rose-400 leading-tight line-clamp-2 text-shadow-pink text-shadow-xl">
+      {/* <LineShadowText className="bold" shadowColor={"pink"}>
             Happy
       </LineShadowText>
       {' '}
       <LineShadowText className="bold" shadowColor={"pink"}>
             Birthday
-      </LineShadowText>
+      </LineShadowText> */}
+      Happy Birthday
         </div>
         
         <WordRotate

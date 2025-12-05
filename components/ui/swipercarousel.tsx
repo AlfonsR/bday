@@ -24,7 +24,7 @@ const SwiperCarousel: React.FC<PropType> = (props) => {
         speed={600}
         parallax={true}
         autoplay={{
-            delay: 5000,
+            delay: 7000,
             disableOnInteraction: false,
         }}
         loop={true}
